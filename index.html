@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <script type="module" src="/main.js"></script>
+    <!-- Words go in here -->
+    <div id="content">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eos?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem illum magni repudiandae reprehenderit deserunt! A velit excepturi nobis quisquam ex quod perspiciatis atque in, ea eum distinctio quaerat dolore eaque exercitationem? Laboriosam,
+            inventore voluptates voluptatem reprehenderit hic fugit alias voluptatibus temporibus doloremque ipsam beatae facere, dolor deleniti quaerat non culpa!</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>x:<input name="x" type="number" step="0.01"></p>
+        <p>y:<input name="y" type="number" step="0.01"></p>
+        <p>z:<input name="z" type="number" step="0.01"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem nisi rem.</p>
+        <button onclick="window.addParticle()">Add particle</button>
+    </div>
+    <a id="infobtn" onclick="changeVis()" style="cursor: pointer; user-select: none;"><b>i</b></a>
+
+    <script>
+        let hidden = false;
+
+        let content = document.getElementById("content")
+
+        function changeVis() {
+            hidden = !hidden;
+            if (hidden) content.style.display = "none"
+            else content.style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+canvas:hover {
+    cursor: move;
+}
+
+div#content {
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+    background-color: #ffffff0f;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#infobtn {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 19px;
+    top: 17px;
+    font-size: 20px;
+}
+
+input {
+    font-size: 1.5em;
+    width: calc(100% - 10px);
+    border: none;
+    background-color: #ffffff0f;
+    outline: none;
+}
+
+input:focus {
+    background-color: #ffffff1f;
+}
